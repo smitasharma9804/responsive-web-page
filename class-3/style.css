@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    display: grid;
+    grid-gap: 30px;
+    background-color: rgba(128, 128, 128, 0.185);
+}
+
+img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.flowers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(216, 112, 147, 0.158);
+    margin: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    column-gap: 5px;
+    row-gap: 15px;
+
+}
+
+.flowers img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.466);
+
+}
+
+.nature-of-girl {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    column-gap: 5px;
+    row-gap: 15px;
+    background-color: rgba(0, 255, 255, 0.034);
+    /* grid-auto-flow: column;
+    overflow-y: hidden;
+    overflow-x: hidden; */
+}
+
+.nature-of-girl img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.466);
+
+}
+
+.prime-pic {
+    text-align: center;
+}
+
+.prime-pic img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px;
+    margin: 5px;
+}
+
+@media screen and (max-width:576px) {
+
+    .flowers,
+    .nature-of-girl,
+    .prime-pic {
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+        background-color: cadetblue;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+
+    }
+
+}
